@@ -1,0 +1,1 @@
+<footer class="bg-blue-300 p-4">footer</footer>
