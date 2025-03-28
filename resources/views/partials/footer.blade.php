@@ -1,3 +1,13 @@
+@php
+    $socials = [
+        'footer-facebook.png',
+        'footer-twitter.png',
+        'footer-youtube.png',
+        'footer-pinterest.png',
+        'footer-periscope.png',
+    ];
+@endphp
+
 <footer style="background-image: url('/assets/img/footer-bg.jpg')" class="bg-blue-300 bg-no-repeat bg-cover">
     <div class="top-footer flex justify-between relative overflow-hidden py-8">
         <div class="grid grid-cols-3 w-[30vw] gap-12 [&_li]:capitalize">
@@ -45,12 +55,25 @@
                 </ul>
             </div>
         </div>
-        <img class="absolute -top-24 right-24" src="/assets/img/dc-logo-bg.png" alt="dc-logo-bg">
+        <img class="absolute -top-24 right-64" src="/assets/img/dc-logo-bg.png" alt="dc-logo-bg">
     </div>
-    <div class="bottom-footer bg-[#303030] flex justify-between py-8">
+    <div class="bottom-footer bg-[#303030] flex justify-between py-12">
         {{-- sign-up btn --}}
-        btn
+        <x-sign-up-btn>
+            <x-slot:label>
+                sign-up now!
+            </x-slot:label>
+        </x-sign-up-btn>
         {{-- social media links --}}
-        social media
+        <div class="flex items-center space-x-6">
+            <span class="uppercase text-2xl text-blue-600 font-semibold">follow us</span>
+            <ul class="flex gap-6">
+                @foreach ($socials as $social)
+                    <li class="scale-95 hover:scale-110 cursor-pointer transition-all">
+                        <img src={{ '/assets/img/' . $social }} alt={{$social}}>
+                    </li>
+                @endforeach
+            </ul>
+        </div>
     </div>
 </footer>

@@ -3,9 +3,13 @@
 
 @layer base {
     header, main, .subfooter, .top-footer, .bottom-footer {
-        @apply !px-40
+        @apply !px-56
     }
     button {
         @apply !cursor-pointer !scale-95 hover:!scale-100 transition-all
+    }
+
+    .top-footer a {
+        @apply hover:text-blue-400 hover:border-b hover:border-b-blue-400
     }
 }
