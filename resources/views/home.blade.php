@@ -2,7 +2,7 @@
 
 @php
     $comics = config('comics');
-    var_dump($comics);
+    // var_dump($comics);
 @endphp
 
 @section('content')
