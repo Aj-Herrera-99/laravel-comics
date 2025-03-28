@@ -13,7 +13,7 @@
             @endphp
             @foreach ($navlinks as $link)
                 @if ($count == 1)
-                    <li class="uppercase font-semibold text-lg py-8 border-b-12 border-b-blue-500 text-blue-500">
+                    <li class="uppercase font-semibold text-lg py-8 border-b-12 border-b-blue-600 text-blue-600">
                         <a href="#">{{ $link }}</a>
                     </li>
                 @else
