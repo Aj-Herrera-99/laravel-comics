@@ -1,2 +1,8 @@
 @import "tailwindcss";
 @source "../views";
+
+@layer base {
+    header, main, footer, .subfooter {
+        @apply !px-40
+    }
+}

@@ -1,1 +1,1 @@
-<div class="bg-green-300 p-4">subfooter</div>
+<div class="subfooter bg-green-300 p-4">subfooter</div>
