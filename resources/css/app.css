@@ -2,7 +2,7 @@
 @source "../views";
 
 @layer base {
-    header, main, footer, .subfooter {
+    header, main, .subfooter, .top-footer, .bottom-footer {
         @apply !px-40
     }
     button {
